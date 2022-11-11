@@ -1,14 +1,14 @@
 import pygame
  
 class Ball:
-    MAX_VELOC = 6
+    MAX_VEL = 6
     COLOR = (255, 255, 255)
 
     def __init__(self, x, y, radius):
         self.x = self.original_x = x
         self.y = self.original_y = y
         self.radius = radius
-        self.x_vel = self.MAX_VELOC
+        self.x_vel = self.MAX_VEL
         self.y_vel = 0
 
     def draw_ball(self, win):
@@ -23,3 +23,4 @@ class Ball:
         self.y = self.original_y
         self.y_vel = 0
         self.x_vel *= -1
+        
