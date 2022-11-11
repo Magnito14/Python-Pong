@@ -2,7 +2,7 @@ import pygame
 
 class Paddle:
     COLOR = (255, 255, 255)
-    VELOC = 6
+    VEL = 6
 
     def __init__(self, x, y, width, height):
         self.x = self.original_x = x
@@ -15,6 +15,6 @@ class Paddle:
 
     def move_paddle(self, up=True):
         if up:
-            self.y -= self.VELOC
+            self.y -= self.VEL
         else:
-            self.y += self.VELOC
+            self.y += self.VEL
